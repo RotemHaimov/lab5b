@@ -9,13 +9,14 @@ var index = require('./routes/index');
 var users = require('./routes/users');
 
 var app = express();
+//SET DEBUG=lab5:* & npm start
 
 // added in (c)
-var mongo = require("mongoose");
+/*var mongo = require("mongoose");
 var db = mongo.createConnection('mongodb://localhost:27017/myfirstdatabase');
 db.once('open', function() { console.log("Connected to DB") });
 db.on('error', function() {  console.log("Error connecting to DB") });
-console.log('Pending DB connection');
+console.log('Pending DB connection');*/
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

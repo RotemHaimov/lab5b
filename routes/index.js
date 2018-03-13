@@ -6,7 +6,6 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
-
 var User = require("./models/user");
 // create a new user called Yossi
 var user = new User({
@@ -46,6 +45,5 @@ User.create({
   if (err) throw err;
   console.log('User created:' + user);
 });
-
 
 module.exports = router;
